@@ -1,7 +1,6 @@
 language: python
 sudo: enabled
-python:
-  -"3.7"
+python: "3.7"
 os: "Mac OS"
 env:
   global:
