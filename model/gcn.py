@@ -18,6 +18,7 @@ class GCN(torch.nn.Module):
         if self.layer == 2:
             self.conv1 = GCNConv(args.input_dim, self.gcn_dim, cached=False, improved=True)
             self.conv2 = GCNConv(self.gcn_dim, args.output_dim, cached=False, improved=True)
+
         # because of weak GPU memory, 7 layer with dim 32 is different
         elif self.layer == 7 and self.gcn_dim == 32:
             self.conv1 = GCNConv(args.input_dim, int(args.input_dim*2), cached=False, improved=True)

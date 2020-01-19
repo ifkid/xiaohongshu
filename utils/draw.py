@@ -11,7 +11,7 @@ from parser import parameter_parser
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from sklearn.metrics import precision_recall_curve, roc_curve, roc_auc_score, p
+from sklearn.metrics import precision_recall_curve, roc_curve, roc_auc_score
 
 plt.rcParams["font.sans-serif"] = ["SimHei"]  # 用来显示中文字体
 plt.rcParams["font.serif"] = ["Times New Roman"]  # 用来显示西文字体
