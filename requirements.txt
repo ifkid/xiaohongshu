@@ -1,4 +1,4 @@
-six
+six==1.14.0
 tensorflow
 pandas
 torch
@@ -6,7 +6,7 @@ torch-geometric
 torch-scatter
 torch-sparse
 torch-cluster
-numpy
+numpy==1.18.1
 seaborn
 
 
