@@ -1,21 +1,14 @@
 language: python
-python: 3.7
-
-after_success:
-  - pwd
-  - git commit -a -m "Travis build"
-  - git status
-  - git push "https://${GH_TOKEN}@${GH_REF}" master:master
-
-cache:
-  yarn: true
-  webpack: true
-  directories:
-    - "node_modules"
-    - "crx/node_modules"
-
+sudo: enabled
+python:
+  -"3.7"
 os: "Mac OS"
-
 env:
   global:
-    - GH_REF: github.com/ifkid/xiaohongshu.git
+    - TRAVIS=true
+install:
+  - pip install -r requirements.txt
+script:
+  python main.py
+
+

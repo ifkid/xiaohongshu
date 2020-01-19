@@ -1,2 +1,7 @@
-torch==1.4.0
-numpy==1.16.3
+six
+tensorflow
+pandas
+torch-geometric
+numpy
+seaborn
+
