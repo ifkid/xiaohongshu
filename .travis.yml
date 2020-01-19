@@ -1,6 +1,6 @@
 language: python
 python: "3.7"
-os: "osx"
+os: "linux"
 env:
   global:
     - TRAVIS=true
