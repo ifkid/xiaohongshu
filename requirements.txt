@@ -1,7 +1,9 @@
 six
 tensorflow
 pandas
+torch
 torch-geometric
 numpy
 seaborn
+
 
